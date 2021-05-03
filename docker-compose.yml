@@ -13,6 +13,7 @@ services:
       dockerfile: PHP.Dockerfile
     volumes:
       - ./app:/app
+    user: "$UID"
   mysql:
     image: mariadb:10.6.0
     environment:
